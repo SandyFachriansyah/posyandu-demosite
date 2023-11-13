@@ -824,10 +824,10 @@ footer {
     }
 
     .find-container{
-        width: 20rem;
+        width: 23rem;
         position: absolute;
         bottom: 0;
-        top: 130px;
+        top: 250px;
     }
 
     .find-container span{
