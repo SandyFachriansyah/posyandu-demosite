@@ -607,6 +607,30 @@ nav {
         padding-left: 10px;
     }
 
+    /* data */
+    .data-wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 150px);
+        gap: 30px 50px;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .card {
+        height: 150px;
+        border: none;
+        border-radius: 30px;
+    }
+    
+    .card img {
+        width: 70px;
+    }
+    
+    .card p {
+        font-size: 15px;
+        font-weight: 700;
+    }
+
 
     /* artikel section */
 
@@ -680,11 +704,11 @@ nav {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
-
+    
     .permalinks li a{
-        display: flex;
         align-items: center;
         justify-content: center;
+        display: flex;
         margin: 10px;
         text-transform: uppercase;
     }
@@ -692,6 +716,9 @@ nav {
     .footer__3-content {
         display: grid;
         grid-template-columns: repeat(2,1fr);
+        align-items: center;
+        justify-content: center;
+        text-align: center;
     }
 
 }
