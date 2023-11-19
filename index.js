@@ -91,4 +91,3 @@ if(document.body.clientWidth < 1024){
     })
 }
 nav.appendChild(loginBtn);
-

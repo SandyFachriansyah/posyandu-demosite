@@ -9,14 +9,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
     <!-- material icons -->
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <title>Document</title>
 </head>
@@ -32,7 +33,7 @@
                 <li><a href="#gallery">Data</a></li>
                 <li><a href="#exhibitions">Informasi</a></li>
                 <li><a href="#exhibitions">Bantuan?</a></li>
-                <li class="login"><a href="">Login</a></li>
+                <li class="login"><a href="./component/Login/login.html">Login</a></li>
 
             </ul>
             <button class="nav__toggle-btn" id="nav__toggle-open"><i class="uil uil-bars"></i></button>
@@ -44,9 +45,11 @@
     <header>
         <div class="hero">
             <div class="left-content">
-                <h1>cari data Posyandu</h1>
+                <h1>Hi, <br />
+                    selamat datang di
+                    Posyandu Jabar</h1>
                 <div class="text-content">
-                    <p>Cari data dan informasi apa saja di sini</p>
+                    <p>Cari apa saja di sini</p>
                     <div class="find-container">
                         <input type="text" class="cari" placeholder="Cari...">
                         <span class="material-symbols-outlined">
@@ -73,7 +76,6 @@
                 </div>
                 <div class="statistik-content">
                     <h2 class="countup" data-target="1.982">0</h2>
-                    <div class="line"></div>
                     <h4>Jumlah Posyandu Kota Bandung</h4>
                 </div>
                 <div class="statistik-content">
@@ -129,69 +131,46 @@
     <!-- artikel Section -->
     <section id="artikel">
         <div class="artikel-container">
-            <h1>Artikel</h1>
+            <h1>artikel</h1>
+            <div class="artikel-wrapper">
+                <div class="artikel-content artikel-content-left">
+                    <img src="./Asset/berita/artikel 1.jpeg" alt="">
+                    <div class="artikel-konten">
+                        <div class="artikel-title">
+                            <h2>Pembinaan Posyandu di seluruh Posyandu Wilayah Kerja Puskesmas Sungailiat</h2>
+                        </div>
+                        <div class="artikel-desc">
+                            <h4>oleh: <span>Unknown</span></h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas excepturi aspernatur beatae fuga. Molestias repudiandae voluptate commodi. Doloremque, iste nihil.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="artikel-content artikel-content-right">
+                    <img src="./Asset/berita/artikel 2.jpg" alt="">
+                    <div class="artikel-konten">
+                        <div class="artikel-title">
+                            <h2>Posyandu Balita</h2>
+                        </div>
+                        <div class="artikel-desc">
+                            <h4>oleh: <span>Unknown</span></h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas excepturi aspernatur beatae fuga. Molestias repudiandae voluptate commodi. Doloremque, iste nihil.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="artikel-content artikel-content-left">
+                    <img src="./Asset/berita/artikel 3.jpeg" alt="">
+                    <div class="artikel-konten">
+                        <div class="artikel-title">
+                            <h2>Cegah Stunting di Daerah, Mendes Anjurkan Dana Desa Dipakai Menunjang Posyandu</h2>
+                        </div>
+                        <div class="artikel-desc">
+                            <h4>oleh: <span>Unknown</span></h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas excepturi aspernatur beatae fuga. Molestias repudiandae voluptate commodi. Doloremque, iste nihil.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <swiper-container class="swiper swipper-wraper" slides-per-view="3" autoplay-delay="1500" pagination="true" loop="infinite">
-            <swiper-slide>
-                <img src="./Asset/berita/artikel 1.jpeg" alt="">
-                <h1>Pembinaan Posyandu di seluruh Posyandu Wilayah Kerja Puskesmas Sungailiat</h1>
-                <div class="artikel-desc">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo fuga nam, cumque animi ipsam  error.</p>
-                </div>
-                <div class="desc-date">
-                    <p>8 Desember 2023</p>
-                    <a href="#">Baca Selengkapnya </a>
-                </div>
-            </swiper-slide>
-            <swiper-slide>
-                <img src="./Asset/berita/artikel 2.jpg" alt="">
-                <h1>Posyandu Bayi</h1>
-                <div class="artikel-desc">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo fuga nam, cumque animi ipsam
-                        error.</p>
-                </div>
-                <div class="desc-date">
-                    <p>8 Desember 2023</p>
-                    <a href="#">Baca Selengkapnya </a>
-                </div>
-            </swiper-slide>
-            <swiper-slide>
-                <img src="./Asset/berita/artikel 3.jpeg" alt="">
-                <h1>Sosialisasi</h1>
-                <div class="artikel-desc">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo fuga nam, cumque animi ipsam
-                        error.</p>
-                </div>
-                <div class="desc-date">
-                    <p>8 Desember 2023</p>
-                    <a href="#">Baca Selengkapnya </a>
-                </div>
-            </swiper-slide>
-            <swiper-slide>
-                <img src="./Asset/berita/artikel 4.jpeg" alt="">
-                <h1>PELAKSANAAN POSYANDU LANSIA BOGEM BARAT BULAN FEBRUARI 2020</h1>
-                <div class="artikel-desc">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo fuga nam, cumque animi ipsam
-                        error.</p>
-                </div>
-                <div class="desc-date">
-                    <p>8 Desember 2023</p>
-                    <a href="#">Baca Selengkapnya </a>
-                </div>
-            </swiper-slide>
-            <swiper-slide>
-                <img src="./Asset/berita/artikel 5.jpg" alt="">
-                <h1>Cegah Stunting di Daerah, Mendes Anjurkan Dana Desa Dipakai Menunjang Posyandu</h1>
-                <div class="artikel-desc">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo fuga nam, cumque animi ipsam
-                        error.</p>
-                    </div>
-                    <div class="desc-date">
-                        <p>8 Desember 2023</p>
-                        <a href="#">Baca Selengkapnya </a>
-                    </div>
-            </swiper-slide>
-        </swiper-container>
     </section>
 
     <footer>
@@ -200,8 +179,7 @@
                 <a href="index.html" class="footer-logo">
                     <img src="./Asset/fiks-removebg-preview.png" alt="">
                 </a>
-                <p>Jl. Surapati No.122, Kelurahan Cihaurgeulis, Kecamatan Cibeunying Kaler, Kota Bandung - 40122,
-                    Provinsi Jawa Barat</p>
+                <p>Jl. Surapati No.122, Kelurahan Cihaurgeulis, <br> Kecamatan Cibeunying Kaler, Kota Bandung - 40122, <br>Provinsi Jawa Barat</p>
             </div>
 
             <div class="footer__2">
@@ -237,14 +215,13 @@
                 </div>
             </div>
         </div>
-
-        <div class="copyright">
-            <small>Copyright &copy; Sandy Fachriansyah Website </small>
-        </div>
     </footer>
+    <div class="copyright">
+        <small>Copyright &copy; Sandy Fachriansyah Website </small>
+    </div>
 </body>
 
-<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="index.js"></script>
 
 </html>
