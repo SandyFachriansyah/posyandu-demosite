@@ -828,7 +828,7 @@ nav {
     }
 
     .find-container{
-        width: 100%;
+        width: 350px;
         position: relative;
     }
     
@@ -840,7 +840,7 @@ nav {
     .find-container span{
         padding: 10px 20px;
         position: absolute;
-        left: 57%;
+        left: 76%;
     }
 
     /* hero section */
