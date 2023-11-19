@@ -549,15 +549,18 @@ nav {
 
     .find-container{
         width: 100%;
+        position: relative;
     }
     
     .find-container input{
         border: none;
+        width: 80%;
+        position: absolute;
     }
 
     .find-container span{
         position: absolute;
-        left: 70%;
+        left: 58.5%;
     }
 
     .right-content{
@@ -826,11 +829,18 @@ nav {
 
     .find-container{
         width: 100%;
+        position: relative;
+    }
+    
+    .find-container input{
+        border: none;
+        width: 100%;
     }
 
     .find-container span{
+        padding: 10px 20px;
         position: absolute;
-        left: 65%;
+        left: 57%;
     }
 
     /* hero section */
