@@ -1,0 +1,148 @@
+:root {
+    --bg-color-1: #289628;
+    --bg-color-2: #f5f5f5;
+    --bg-color-3: #b6b6b0;
+    --bg-color-4: #dddddb;
+
+    --txt-color-1: #fffdfc;
+    --txt-color-2: #666660;
+    --txt-color-3: #0b0d0b;
+
+    --container-width-lg: 88%;
+    --container-width-md: 80%;
+}
+
+
+
+
+body {
+    width:100%;
+    background: url('/Asset/background/MacBook\ Air\ -\ 2.png');
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    margin: 0;
+}
+
+#Artikel {
+    height: 100vh;
+    width: 100vw;
+}
+
+.artikel {
+    display: flex;
+    width: 80vw;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 120px 0 0 0;
+}
+
+.artikel h1{
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--txt-color-1);
+}
+
+.artikel .artikel-wrapper{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    background: var(--bg-color-1);
+    border: 1px solid var(--bg-color-3);
+    box-shadow: -1rem 1rem 1rem rgba(0, 0, 0, 0.303)
+}
+
+.artikel-wrapper .artikel-content{
+    display: flex;
+    width: 100%;
+    height: 90%;
+    border-bottom: 1px solid var(--bg-color-3);
+    border-radius: 0;
+    background: none;
+}
+
+.artikel-image{
+    width: 80%;
+    height: auto;
+}
+
+.artikel-image img{
+    border-radius: 0px;
+}
+
+.artikel-text{
+    display: flex;
+    flex-direction: column;
+    color: var(--txt-color-1);
+    text-align: left;
+    margin-left: 20px;
+}
+
+.artikel-text h2{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 5%;
+}
+
+.pagination-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pagination{
+    display: flex;
+    align-items: center;
+    color: var(--txt-color-1);
+    padding: 10px 40px;
+}
+
+.pagination ul{
+    margin: 20px 30px;
+}
+
+.pagination ul li{
+    display: inline-block;
+    margin: 0 10px;
+    background: var(--bg-color-1);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 45px;
+    background-position: 0 -45px;
+    transition: background 0.5s;
+    cursor: pointer;
+}
+
+.pagination ul li.active{
+    color: var(--txt-color-1);
+    background:#39b039;
+    background-position: 0 0;
+}
+
+.btn1, .btn2{
+    display: inline-flex;
+    align-items: center;
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--txt-color-1);
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.btn1 img{
+    width: 22px;
+    margin-right: 15px;
+}
+
+.btn2 img{
+    width: 22px;
+    margin-left: 15px;
+    transform: rotate(180deg);
+}

@@ -1,15 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="stylesheet" href="/home.css">
     <link rel="stylesheet" href="artikel.css">
     <title>Document</title>
 </head>
+
 <body>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo voluptatum fugiat quidem eaque, minima velit! Magnam quis, ut corrupti sit excepturi vitae quidem deleniti nam expedita nobis hic quibusdam, totam perspiciatis voluptates laboriosam eveniet voluptatibus ab maxime, distinctio ipsa! Minima hic illo ratione nobis perspiciatis eos, sint cumque doloremque corrupti atque totam rem assumenda tenetur a distinctio commodi laborum obcaecati blanditiis autem est possimus. Tenetur id recusandae est veritatis expedita!
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto dolorem hic corporis ex ipsa exercitationem sunt reiciendis blanditiis, corrupti pariatur dicta iure illum placeat temporibus, enim officia et. Modi, distinctio.
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis neque mollitia autem atque? Nisi molestiae officiis tempore laborum asperiores repellat quae accusamus in, natus ipsum facere quas voluptates, provident aut?
+    <nav>
+        <div class="nav__container">
+            <a href="index.html" class="nav__logo"><img src="/Asset/fiks-removebg-preview.png" alt="Nav Logo"></a>
+            <ul class="nav__link">
+                <li><a href="/index.html">Beranda</a></li>
+                <li><a href="#artikel">Artikel</a></li>
+                <li><a href="#data">Data</a></li>
+                <li><a href="#exhibitions">Informasi</a></li>
+                <li><a href="#exhibitions">Bantuan?</a></li>
+                <li class="login"><a href="/component/Login/login.html">Login</a></li>
+
+            </ul>
+            <button class="nav__toggle-btn" id="nav__toggle-open"><i class="uil uil-bars"></i></button>
+            <button class="nav__toggle-btn" id="nav__toggle-close"><i class="uil uil-multiply"></i></button>
+        </div>
+    </nav>
+
+    <!-- <section id="artikel"> -->
+    <section id="#Artikel">
+        <div class="artikel">
+            <h1>Artikel</h1>
+            <div class="artikel-wrapper">
+                <div class="artikel-content">
+                    <div class="artikel-image">
+                        <img src="/Asset/berita/artikel 1.jpeg" alt="">
+                    </div>
+                    <div class="artikel-text">
+                        <h2>Pembinaan Posyandu di seluruh Posyandu Wilayah Kerja Puskesmas Sungailiat</h2>
+                        <span>Author: Budi Santoso</span>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo fuga nam, cumque animi
+                            ipsam error.</p>
+                    </div>
+                </div>
+                <div class="artikel-content">
+                    <div class="artikel-image">
+                        <img src="/Asset/berita/artikel 2.jpg" alt="">
+                    </div>
+                    <div class="artikel-text">
+                        <h2>Posyandu Balita</h2>
+                        <span>Author: Budi Santoso</span>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo fuga nam, cumque animi
+                            ipsam error.</p>
+                    </div>
+                </div>
+                <div class="artikel-content">
+                    <div class="artikel-image">
+                        <img src="/Asset/berita/artikel 3.jpeg" alt="">
+                    </div>
+                    <div class="artikel-text">
+                        <h2>Sosialisasi Posyandu Remaja</h2>
+                        <span>Author: Budi Santoso</span>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo fuga nam, cumque animi
+                            ipsam error.</p>
+                    </div>
+                </div>
+                <div class="artikel-content">
+                    <div class="artikel-image">
+                        <img src="/Asset/berita/artikel 4.jpeg" alt="">
+                    </div>
+                    <div class="artikel-text">
+                        <h2>PELAKSANAAN POSYANDU LANSIA BOGEM BARAT BULAN FEBRUARI 2020</h2>
+                        <span>Author: Budi Santoso</span>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo fuga nam, cumque animi
+                            ipsam error.</p>
+                    </div>
+                </div>
+                <div class="artikel-content">
+                    <div class="artikel-image">
+                        <img src="/Asset/berita/artikel 5.jpg" alt="">
+                    </div>
+                    <div class="artikel-text">
+                        <h2>Cegah Stunting di Daerah, Mendes Anjurkan Dana Desa Dipakai Menunjang Posyandu</h2>
+                        <span>Author: Budi Santoso</span>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo fuga nam, cumque animi
+                            ipsam error.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pagination-container">
+            <div class="pagination">
+                <button class="btn1" onclick="backBtn()"><img src="/Asset/icon/arrow.png" alt=""> prev</button>
+                <ul>
+                    <li class="link active" value="1" onclick="activeLink()">1</li>
+                    <li class="link" value="2" onclick="activeLink()">2</li>
+                    <li class="link" value="3" onclick="activeLink()">3</li>
+                    <li class="link" value="4" onclick="activeLink()">4</li>
+                    <li class="link" value="5" onclick="activeLink()">5</li>
+                </ul>
+                <button class="btn2" value="1" onclick="nextBtn()">next <img src="/Asset/icon/arrow.png"
+                        alt=""></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- <footer> -->
+    <div class="footer__container">
+        <div class="footer__1">
+            <a href="index.html" class="footer-logo">
+                <img src="/Asset/fiks-removebg-preview.png" alt="">
+            </a>
+            <p>Jl. Surapati No.122, Kelurahan Cihaurgeulis, <br> Kecamatan Cibeunying Kaler, Kota Bandung - 40122,
+                <br>Provinsi Jawa Barat
+            </p>
+        </div>
+
+        <div class="footer__2">
+            <h4>Menu</h4>
+            <ul class="permalinks">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="#">Artikel</a></li>
+                <li><a href="#">Data</a></li>
+                <li><a href="#">Informasi</a></li>
+                <li><a href="#">Bantuan</a></li>
+            </ul>
+        </div>
+
+        <div class="footer__3">
+            <h4>Contact Us</h4>
+            <div class="footer__3-content">
+                <p>+62-123-4567-1234 </p>
+                <p>Posyandu@mail.com</p>
+                <ul class="footer__socials">
+                    <li>
+                        <a href=""><i class="uil uil-facebook-f"></i></a>
+                    </li>
+                    <li>
+                        <a href=""><i class="uil uil-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a href="" class="uil uil-twitter-alt"></a>
+                    </li>
+                    <li>
+                        <a href="" class="uil uil-linkedin-alt"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </footer>
+    <div class="copyright">
+        <small>Copyright &copy; Sandy Fachriansyah Website </small>
+    </div>
+    <script src="/index.js"></script>
+    <script>
+        let link = document.getElementsByClassName('link')
+
+        let currentValue = 1;
+        function activeLink() {
+            for (l of link) {
+                l.classList.remove('active')
+            }
+            event.target.classList.add('active')
+            currentValue = event.target.value;
+        }
+
+        function backBtn() {
+            if (currentValue > 1) {
+                for (l of link) {
+                    l.classList.remove('active')
+                }
+                currentValue--;
+                link[currentValue-1].classList.add('active')
+            }
+        }
+        function nextBtn() {
+            if (currentValue < 5) {
+                for (l of link) {
+                    l.classList.remove('active')
+                }
+                currentValue++;
+                link[currentValue-1].classList.add('active')
+            }
+        }
+    </script>
 </body>
+
 </html>

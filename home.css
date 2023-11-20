@@ -21,19 +21,16 @@
 }
 
 body {
-    width: 100%;
+    width: 100vw;
     background: url('./Asset/background/MacBook\ Air\ -\ 2.png');
     background-size: cover;
     background-position: top center;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-header,
-section {
-    width: 100vw;
-}
 
 img {
     width: 150px;
@@ -52,7 +49,7 @@ nav {
     padding: 0;
     z-index: 99;
     position: fixed;
-    width: 100%;
+    width: 100vw;
 }
 
 .nav__container {
@@ -61,19 +58,20 @@ nav {
     height: 100px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
 .nav__logo img {
     width: 80px;
     height: auto;
-    margin: 10px 150px;
+    margin-left: 100px;
 }
 
 .nav__link {
     display: flex;
     flex-direction: row;
+    margin-right: 100px;
 }
 
 .nav__link li {
@@ -92,14 +90,13 @@ nav {
 }
 
 .nav__link .login a {
-    margin-left: 156px;
-    margin-right: 70px;
     padding: 10px 26px;
     background: var(--bg-color-2);
     color: var(--bg-color-1);
     border: none;
     border-radius: 25px;
     font-weight: 700;
+    margin-left: 150px;
 }
 
 .window-scrolled {
@@ -109,26 +106,29 @@ nav {
 
 /* hero */
 
+#hero{
+    
+}
+
 .hero {
-    margin: 0px 100px 0px 100px;
-    width: 100%;
+    margin: 0;
+    width: 90%;
     height: 100vh;
     display: grid;
-    grid-template-columns: 640px 640px;
-    justify-content: center;
+    grid-template-columns: 50% 40%;
     align-items: center;
-    gap: 70px;
+    gap: 10%;
 }
 
 .left-content {
-
-    width: 530px;
+    width: 100%;
     height: 336px;
     z-index: 1;
+
 }
 
 .left-content h1 {
-    width: 514px;
+    width: 100%;
     padding-bottom: 20px;
     font-weight: 700;
     font-size: 40px;
@@ -142,20 +142,22 @@ nav {
 }
 
 .find-container {
-    width: 528px;
+    width: 100%;
     height: 64px;
     display: flex;
     align-items: center;
 }
 
 .find-container input {
-    width: 100%;
-    height: 100%;
     background: var(--bg-color-2);
     border: none;
     border-radius: 50px;
     padding-left: 30px;
     font-size: 25px;
+    position: relative;
+    width: 450px;
+    height: 100%;
+    outline: none;
 }
 
 .find-container span {
@@ -165,7 +167,7 @@ nav {
     border: none;
     border-radius: 50px;
     position: absolute;
-    left: 38.5%;
+    left: 31.5%;
 }
 
 .right-content {
@@ -274,7 +276,7 @@ nav {
 }
 
 .card p {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 700;
 }
 
@@ -547,7 +549,7 @@ nav {
         font-weight: 400;
     }
 
-    .find-container{
+    .left-content .find-container{
         width: 100%;
         position: relative;
     }
@@ -555,12 +557,12 @@ nav {
     .find-container input{
         border: none;
         width: 80%;
-        position: absolute;
+        position: relative;
     }
 
     .find-container span{
         position: absolute;
-        left: 58.5%;
+        left: 63%;
     }
 
     .right-content{
