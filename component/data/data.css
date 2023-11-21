@@ -53,36 +53,19 @@ iframe{
 }
 
 @media screen and (max-width: 1024px) {
-    nav {
-        max-width: 100vw;
-    }
-
-    .nav__toggle-btn{
-        margin-right: 5%;
-    }
-
-    .nav__logo img{
-        margin-left: 50%;
-    }
-
+        nav {
+            max-width: 100vw;
+        }
+    
+        .nav__toggle-btn{
+            margin-right: 5%;
+        }
+    
+        .nav__logo img{
+            margin-left: 50%;
+        }
+    
     #data{
-        margin-top: 20%;
-    }
-}
-@media screen and (max-width: 600px) {
-    nav {
-        max-width: 100vw;
-    }
-
-    .nav__toggle-btn{
-        margin-right: 15%;
-    }
-
-    .nav__logo img{
-        margin-left: 50%;
-    }
-
-    #data{
-        margin-top: 20%;
+        margin-top: 5%;
     }
 }

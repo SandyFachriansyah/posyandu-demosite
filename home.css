@@ -53,7 +53,6 @@ nav {
 }
 
 .nav__container {
-    width: 100%;
     /* Adjust the width as per your design */
     height: 100px;
     display: flex;
@@ -62,16 +61,19 @@ nav {
     align-items: center;
 }
 
+.nav__logo{
+    margin-left: 5%;
+}
+
 .nav__logo img {
     width: 80px;
     height: auto;
-    margin-left: 100px;
 }
 
 .nav__link {
     display: flex;
     flex-direction: row;
-    margin-right: 100px;
+    margin-right: 5%;
 }
 
 .nav__link li {
@@ -464,7 +466,7 @@ footer{
 
     /* nav */
     nav {
-        width: 90%;
+        width: 100%;
         height: auto;
     }
 
@@ -752,7 +754,7 @@ footer{
     }
 
     .nav__logo{
-        margin: 0%;
+        margin: 15%;
     }
 
     .nav__link{
