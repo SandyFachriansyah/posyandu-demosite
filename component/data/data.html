@@ -1,11 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <link rel="stylesheet" href="/component/Artikel/artikel.html">
+    <link rel="stylesheet" href="./data.css">
+    <link rel="stylesheet" href="/home.css">
     <title>Document</title>
 </head>
+
 <body>
-    
+    <nav>
+        <div class="nav__container">
+            <a href="index.html" class="nav__logo"><img src="/Asset/fiks-removebg-preview.png" alt="Nav Logo"></a>
+            <ul class="nav__link">
+                <li><a href="/index.html">Beranda</a></li>
+                <li><a href="#artikel">Artikel</a></li>
+                <li><a href="#data">Data</a></li>
+                <li><a href="#exhibitions">Informasi</a></li>
+                <li><a href="#exhibitions">Bantuan?</a></li>
+                <li class="login"><a href="/component/Login/login.html">Login</a></li>
+
+            </ul>
+            <button class="nav__toggle-btn" id="nav__toggle-open"><i class="uil uil-bars"></i></button>
+            <button class="nav__toggle-btn" id="nav__toggle-close"><i class="uil uil-multiply"></i></button>
+        </div>
+    </nav>
+
+    <section id="data">
+        <div class="data-page">
+            <h1>Data</h1>
+            <div class="data-page-wrapper">
+                Pada halaman ini akan tersedia data posyandu yang telah terdaftar pada setiap kecamatannya
+            </div>
+            <iframe width="100%" height="400" style="background: #289628;"
+                src="http://satudata.bandung.go.id/dataset/jumlah-posyandu-di-kota-bandung/resource/1a9e8de2-2bc1-4c2e-96b6-a3ef4378ea89/view/44377a8d-2c06-41ab-978d-14b885340896"
+                frameBorder="0"></iframe>
+        </div>
+    </section>
+
+
+
+
+    <footer>
+        <div class="footer__container">
+            <div class="footer__1">
+                <a href="index.html" class="footer-logo">
+                    <img src="/Asset/fiks-removebg-preview.png" alt="">
+                </a>
+                <p>Jl. Surapati No.122, Kelurahan Cihaurgeulis, <br> Kecamatan Cibeunying Kaler, Kota Bandung - 40122,
+                    <br>Provinsi Jawa Barat
+                </p>
+            </div>
+
+            <div class="footer__2">
+                <h4>Menu</h4>
+                <ul class="permalinks">
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="#">Artikel</a></li>
+                    <li><a href="#">Data</a></li>
+                    <li><a href="#">Informasi</a></li>
+                    <li><a href="#">Bantuan</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__3">
+                <h4>Contact Us</h4>
+                <div class="footer__3-content">
+                    <p>+62-123-4567-1234 </p>
+                    <p>Posyandu@mail.com</p>
+                    <ul class="footer__socials">
+                        <li>
+                            <a href=""><i class="uil uil-facebook-f"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="uil uil-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href="" class="uil uil-twitter-alt"></a>
+                        </li>
+                        <li>
+                            <a href="" class="uil uil-linkedin-alt"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="copyright">
+        <small>Copyright &copy; Sandy Fachriansyah Website </small>
+    </div>
+    <script src="/index.js"></script>
 </body>
+
 </html>

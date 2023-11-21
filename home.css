@@ -231,7 +231,7 @@ nav {
 
 /* data section */
 .data-container {
-    width: 100%;
+    width: 80%;
     height: 100vh;
     margin-top: 60px;
 }
@@ -338,12 +338,18 @@ nav {
 }
 
 /* footer section */
+footer{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .footer__container {
-    width: 1270px;
+    width: 90%;
     height: 250px;
     display: grid;
     grid-template-columns: repeat(3, 25%);
-    margin: 0 60px 0 60px;
     gap: 10%;
     border-top: 2px solid var(--bg-color-4);
     padding-top: 16px;
@@ -423,13 +429,12 @@ nav {
 }
 
 .copyright {
-    width: 100%;
+    width:90%;
     height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: rgba(55, 136, 55, 0.627);
     color: var(--txt-color-1);
 }
 
@@ -459,7 +464,7 @@ nav {
 
     /* nav */
     nav {
-        width: 900px;
+        width: 90%;
         height: auto;
     }
 
