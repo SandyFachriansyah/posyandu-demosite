@@ -50,11 +50,11 @@ nav {
     z-index: 99;
     position: fixed;
     width: 100vw;
+    height: 100px;
 }
 
 .nav__container {
     /* Adjust the width as per your design */
-    height: 100px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -76,14 +76,14 @@ nav {
     margin-right: 5%;
 }
 
-.nav__link li {
+.nav__link a{
     margin-left: 26px;
-    list-style: none;
+    text-decoration: none;
 }
 
-.nav__link li a {
+.nav__link a li {
+    list-style: none;
     font-size: 22px;
-    text-decoration: none;
     color: var(--txt-color-1);
 }
 
@@ -91,7 +91,7 @@ nav {
     display: none;
 }
 
-.nav__link .login a {
+.nav__link .login li{
     padding: 10px 26px;
     background: var(--bg-color-2);
     color: var(--bg-color-1);
@@ -109,13 +109,13 @@ nav {
 /* hero */
 
 #hero{
+    height: 100vh;
+    width: 90%;
     
 }
 
 .hero {
-    margin: 0;
-    width: 90%;
-    height: 100vh;
+    margin-top: 10%;
     display: grid;
     grid-template-columns: 50% 40%;
     align-items: center;
@@ -440,7 +440,7 @@ footer{
     color: var(--txt-color-1);
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
     .container {
         width: var(--container-width-md);
         position: relative;
@@ -466,11 +466,12 @@ footer{
 
     /* nav */
     nav {
-        width: 100%;
+        width: 100vw;
         height: auto;
     }
 
     .nav__container{
+        margin-left: 3%;
         justify-content: space-between;
     }
 
@@ -485,7 +486,7 @@ footer{
         right: 0%;
     }
 
-    .nav__link li{ 
+    .nav__link a{ 
         height: 5rem;
         width: 100%;
         background: var(--bg-color-4);
@@ -497,7 +498,7 @@ footer{
         box-shadow: -3rem 3rem 3rem rgba(0, 0, 0, 0.7)
     }
     
-    .nav__link li a{
+    .nav__link a li{
         color: var(--bg-color-1);
         font-size: 20px;
         font-weight: 700;
@@ -509,13 +510,14 @@ footer{
         background: transparent;
         font-size: 50px;
         color: var(--bg-color-4);
+        margin-left: 15px;
     }
     
     #nav-toggle-close{
         display: none;
     }
 
-    .nav__link .login a {
+    .nav__link .login li {
         padding: 0;
         margin: 100px;
         background: transparent;
@@ -529,6 +531,7 @@ footer{
         align-items: center;
         margin: 0;
         padding: 0;
+        width: 100vw;
     }
 
     .hero{
@@ -537,11 +540,12 @@ footer{
         align-items: center;
         justify-content: center;
         height: 100vh;
-        width: 100%;
+        width: 80%;
     }
 
     .left-content{
         text-align: center;
+        margin-left: 10%;
     }
 
     .left-content h1{
@@ -745,16 +749,16 @@ footer{
     }
 
     nav {
-        width: 550px;
-        height: auto;
+        width: 100vw;
+        height: 100px;
     }
 
     .nav__container{
-        margin: 0;
+        margin-left: 10%;
     }
 
     .nav__logo{
-        margin: 15%;
+        margin: 0;
     }
 
     .nav__link{
@@ -783,12 +787,12 @@ footer{
         background: var(--bg-color-1);
     }
 
-    .nav__link li a{
+    .nav__link a li {
         color: var(--bg-color-1);
         font-size: 20px;
         font-weight: 700;
     }
-    .nav__link li a:hover{
+    .nav__link a:hover li{
         color: var(--txt-color-1);
         font-size: 20px;
         font-weight: 700;
@@ -806,11 +810,12 @@ footer{
         display: none;
     }
 
-    .nav__link .login a {
+    .nav__link .login li {
         padding: 0;
-        margin: 100px;
         background: transparent;
         text-align: left;
+
+
     }
 
     /* header */ 
@@ -887,7 +892,7 @@ footer{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         align-items: center;
-        margin: 0 20px;
+        margin: 0 5%;
     }
 
     .artikel-content{
