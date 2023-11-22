@@ -73,6 +73,7 @@ nav {
 .nav__link {
     display: flex;
     flex-direction: row;
+    align-items: center;
     margin-right: 5%;
 }
 
@@ -81,7 +82,7 @@ nav {
     text-decoration: none;
 }
 
-.nav__link a li {
+.nav__link li {
     list-style: none;
     font-size: 22px;
     color: var(--txt-color-1);
@@ -233,9 +234,13 @@ nav {
 
 /* data section */
 .data-container {
-    width: 80%;
+    width: 100%;
     height: 100vh;
     margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
 }
 
 .data-container h1 {
@@ -628,8 +633,6 @@ footer{
         display: grid;
         grid-template-columns: repeat(3, 150px);
         gap: 30px 50px;
-        align-items: center;
-        justify-content: center;
     }
     
     .card {
